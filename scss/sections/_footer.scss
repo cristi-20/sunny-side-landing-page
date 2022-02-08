@@ -1,0 +1,41 @@
+// *******************
+// MOBILE
+// *******************
+.footer {
+    background:$darkModerateCyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5rem;
+    padding-block:3rem;
+
+    .footer_logo {
+        width:170px;
+    }
+
+    .footer_links {
+        display: flex;
+        gap:4rem;
+        font-family: $poppins;
+        font-weight: 600;
+    a {
+        color:$darkCyan;
+    }
+    }
+
+    .social_icons {
+        display: flex;
+        gap:2rem;
+        color:$darkCyan;
+        font-size: 1.6rem;
+    }
+}
+
+
+// *******************
+// Tablets and medium screen sizes  
+// *******************
+
+// *******************
+// Desktop  
+// *******************

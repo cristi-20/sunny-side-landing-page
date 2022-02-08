@@ -1,0 +1,99 @@
+// *******************
+// MOBILE
+// *******************
+
+.testimonials {
+    margin: 10rem 0;
+    text-align: center;
+    .testimonials_title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $grayishBlue;
+        margin-bottom: 10rem;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            height: 7px;
+            width: 50px;
+            background: $grayishBlue;
+            border-radius: 10px;
+        }
+    }
+
+    .grid_container {
+        display: grid;
+        place-content:center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        row-gap: 7rem;
+        column-gap:3rem;
+        width: 100%;
+        padding-inline:1.5rem;
+        
+    }
+
+    .testimonial_card {
+        display: grid;
+        grid-auto-rows: 1fr min-content;
+        justify-items: center;
+        gap: 3rem;
+        padding-inline: 2rem;
+        padding-block: 3rem;
+        border: 1px solid hsl(210, 4%, 90%);
+        border-radius: 5px;
+        position: relative;
+
+
+        .testimonial_image {
+            max-width: 100px;
+            border-radius: 100%;
+            position: absolute;
+            top: -50px;
+        }
+
+        .card_text {
+            max-width: 45ch;
+            font-family: $poppins;
+            margin-top: 5rem;
+        }
+
+        .signature {
+
+
+            .signature_position,
+            .signature_title {
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            .signature_position {
+                color: $darkGrayishBlue;
+                margin-top: 1rem;
+            }
+
+        }
+    }
+}
+
+// *******************
+// Tablets and medium screen sizes  
+// ******************
+.testimonials {
+    .grid_container {
+        @include md {
+            padding-inline:0;
+        }
+    }
+}
+    
+   
+
+
+
+// *******************
+// Desktop  
+// *******************

@@ -1,0 +1,88 @@
+// *******************
+// MOBILE
+// *******************
+.graphic_design_photography {
+    display: grid;
+    text-align: center;
+    margin-top: 5rem;
+
+    article {
+        padding-inline:1.5rem;
+    }
+
+.title,.text {
+   z-index:100;
+    color:$veryDarkdesaturatedBlue;
+}
+
+    .title {
+        font-size: 1.5rem;
+        margin-top: 30rem;
+        margin-bottom: 2rem;
+       
+    }
+    
+    .text {
+        font-family: $poppins;
+        max-width: 40ch;
+    }
+
+    .graphic_design {
+        display: grid;
+        place-items: center;
+        position: relative;
+        padding-bottom: 4rem;
+        background-image: url('../images/mobile/image-graphic-design.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top;
+       
+        &:after {
+            content:'';
+            width: 100%;
+            min-height:100%;
+            position: absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:50%;
+            transform: translateX(-50%);
+            z-index:10;
+            background:hsla(167, 44%, 71%,0.2);
+         
+        }     
+    }
+
+.photography {
+    @extend .graphic_design;
+    background-image: url('../images/mobile/image-photography.jpg');
+}
+
+}
+
+// *******************
+// Tablets and medium screen sizes  
+// *******************
+.graphic_design_photography {
+   @include md {
+       grid-template-columns: 1fr 1fr;
+       margin-top: 0;
+   }
+
+   .graphic_design {
+    @include breakpoint(34.375rem) {
+        background-image: url('../images/desktop/image-graphic-design.jpg');
+       }
+   }
+
+   .photography {
+    @include breakpoint(34.375rem) {
+        background-image: url('/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg');
+       }
+   }
+   }
+
+
+// *******************
+// Desktop  
+// *******************

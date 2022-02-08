@@ -1,0 +1,28 @@
+// *******************
+// MOBILE
+// *******************
+
+.image_gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+// *******************
+// Tablets and medium screen sizes  
+// *******************
+.image_gallery {
+    @include breakpoint(46.875rem) {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+// *******************
+// Desktop  
+// *******************

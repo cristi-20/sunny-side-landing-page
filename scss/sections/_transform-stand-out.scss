@@ -1,0 +1,147 @@
+// ********************
+// Transform Brand & Stand Out Sections
+// ********************
+// *******************
+// MOBILE
+// *******************
+
+.transform_brand,.stand_out
+ {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'image'
+    'article'
+     ;
+     gap:3rem;
+     text-align: center;
+            
+            img {
+                width: 100%;
+                grid-area: image;
+                justify-self: end;
+            }
+
+            article {
+            padding-inline:2rem;
+            grid-area:article;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        
+
+    .section_title {
+        font-size: clamp(1.7rem,4vw,2.1rem);
+        color: $darkCyan;
+        margin-bottom: 1rem;
+    }
+
+    .section_text {
+        color: $gray;
+        font-family: $poppins;
+        font-size: 1rem;
+        max-width: 45ch;
+        margin-bottom: 2rem; 
+    }
+
+    .learn_more {
+        color: $darkCyan;
+        text-transform: uppercase;
+        font-family: $fraunces;
+        font-size: 1.1rem;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            bottom: 1px;
+            z-index: -1;
+            height: 7px;
+            width: 140px;
+            border-radius: 40px;
+            background: hsla(50, 100%, 50%, 0.3);
+        }
+    }
+
+    .pink:after {
+        content:'';
+        background:hsla(7%, 99%, 70%,0.3);
+    }
+}
+
+.stand_out {
+    grid-template-areas:
+            'image'
+            'article'
+                ;
+                margin-top: 5rem;
+
+                .section_title {
+                    max-width: 70%;
+                }
+}
+
+// *******************
+// Tablets and medium screen sizes  
+// *******************
+.transform_brand,
+.stand_out {
+    @include md {
+        grid-template-areas:
+        'article image';
+        grid-template-columns: 1fr 1fr ;
+        text-align: left;
+        gap:0;
+       
+        article {
+            padding-inline:2rem;
+            align-items: start;
+        }
+
+        .section_title {
+            max-width: 60%;
+        }
+    }
+}
+
+.stand_out {
+    @include md {
+        grid-template-areas:
+        'image article'
+            ;
+            margin-top: 0;
+            text-align: right;
+
+            article {
+                
+                align-items: end;
+            }
+            
+            img {
+                justify-self: start;
+            }
+            
+            .section_title {
+                max-width: 70%;
+            }
+    }
+}
+
+
+// *******************
+// Desktop  
+// *******************
+
+.transform_brand,
+.stand_out  {
+    @include xl{
+        article {
+            padding-inline:0;
+        }
+    }
+}
