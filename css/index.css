@@ -82,7 +82,8 @@ input {
   font-family: "poppins", "sans-serif";
   font-weight: 600;
 }
-.mobile_nav ul .menu_link {
+
+.menu_link {
   color: #014274;
 }
 
