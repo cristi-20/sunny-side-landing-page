@@ -452,10 +452,9 @@ input {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  width: 100vw;
 }
 .image_gallery img {
-  max-width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 46.875rem) {

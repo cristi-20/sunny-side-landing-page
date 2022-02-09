@@ -6,10 +6,9 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 100vw;
 
     img {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
