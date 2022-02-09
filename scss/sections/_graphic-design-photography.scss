@@ -54,8 +54,11 @@
     }
 
 .photography {
-    @extend .graphic_design;
-    background: url('../images/mobile/image-photography.jpg');
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding-bottom: 4rem;
+    background: url('/frontendmentor/sunnyside-agency/images/mobile/image-photography.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:top;
