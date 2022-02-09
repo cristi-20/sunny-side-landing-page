@@ -55,7 +55,7 @@
 
 .photography {
     @extend .graphic_design;
-    background-image:url('/frontendmentor/sunnyside-agency/images/mobile/image-photography.jpg');
+    background-image:url('../images/mobile/image-photography.jpg');
 }
 
 }
@@ -77,7 +77,7 @@
 
    .photography {
     @include breakpoint(34.375rem) {
-        background-image: url('/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg');
+        background-image: url('../images/desktop/image-photography.jpg');
        }
    }
    }
