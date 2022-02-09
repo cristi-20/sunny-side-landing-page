@@ -335,7 +335,7 @@ input {
   font-family: "poppins", "sans-serif";
   max-width: 40ch;
 }
-.graphic_design_photography .graphic_design {
+.graphic_design_photography .graphic_design, .graphic_design_photography .photography {
   display: grid;
   place-items: center;
   position: relative;
@@ -345,7 +345,7 @@ input {
   background-size: cover;
   background-position: top;
 }
-.graphic_design_photography .graphic_design:after {
+.graphic_design_photography .graphic_design:after, .graphic_design_photography .photography:after {
   content: "";
   width: 100%;
   min-height: 100%;
@@ -359,14 +359,7 @@ input {
   background: rgba(149, 214, 199, 0.2);
 }
 .graphic_design_photography .photography {
-  display: grid;
-  place-items: center;
-  position: relative;
-  padding-bottom: 4rem;
   background: url("/frontendmentor/sunnyside-agency/images/mobile/image-photography.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
 }
 
 @media (min-width: 756px) {
@@ -376,13 +369,13 @@ input {
   }
 }
 @media (min-width: 34.375rem) {
-  .graphic_design_photography .graphic_design {
-    background-image: url("../images/desktop/image-graphic-design.jpg");
+  .graphic_design_photography .graphic_design, .graphic_design_photography .photography {
+    background: url("../images/desktop/image-graphic-design.jpg");
   }
 }
 @media (min-width: 34.375rem) {
   .graphic_design_photography .photography {
-    background-image: url("/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg");
+    background: url("/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg");
   }
 }
 

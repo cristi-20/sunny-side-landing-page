@@ -54,14 +54,8 @@
     }
 
 .photography {
-    display: grid;
-    place-items: center;
-    position: relative;
-    padding-bottom: 4rem;
-    background: url('/frontendmentor/sunnyside-agency/images/mobile/image-photography.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:top;
+    @extend .graphic_design;
+    background:url('/frontendmentor/sunnyside-agency/images/mobile/image-photography.jpg');
 }
 
 }
@@ -77,13 +71,13 @@
 
    .graphic_design {
     @include breakpoint(34.375rem) {
-        background-image: url('../images/desktop/image-graphic-design.jpg');
+        background: url('../images/desktop/image-graphic-design.jpg');
        }
    }
 
    .photography {
     @include breakpoint(34.375rem) {
-        background-image: url('/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg');
+        background: url('/frontendmentor/sunnyside-agency/images/desktop/image-photography.jpg');
        }
    }
    }
