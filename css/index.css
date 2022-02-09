@@ -340,7 +340,7 @@ input {
   place-items: center;
   position: relative;
   padding-bottom: 4rem;
-  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background: url("../images/mobile/image-graphic-design.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -360,6 +360,9 @@ input {
 }
 .graphic_design_photography .photography {
   background: url("../images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 @media (min-width: 756px) {
